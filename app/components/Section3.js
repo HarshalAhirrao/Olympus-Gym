@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 
 const Section3 = () => {
     return (
-        <section id="Contact" className="w-full bg-black py-16 px-4 md:px-6 text-white transition-all duration-300">
+        <section id="Contact" className="w-full bg-black py-8 md:py-16 px-4 md:px-6 text-white transition-all duration-300">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
                 {/* Text Side */}
                 <div className="md:w-1/2 text-center md:text-left">
@@ -31,7 +31,7 @@ const Section3 = () => {
                 </div>
 
                 {/* Image Side */}
-                <div className="md:w-1/2 hidden md:flex justify-center ">
+                <div className="md:w-1/2 justify-center ">
                     <Image src="/img/section3.png" alt="Trainer assisting gym member" style={{ height: "auto" }} width={550} height={350} className="rounded-lg shadow-lg object-cover" />
                 </div>
             </div>
