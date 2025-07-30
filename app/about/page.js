@@ -12,8 +12,8 @@ export default function about() {
                     <h2 className="text-blue-400 text-sm uppercase tracking-widest mb-3">Who We Are</h2>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Empowering Your Fitness Journey</h1>
                     <p className="text-gray-400 text-sm md:text-base mb-6 leading-relaxed">
-                        Olympus isn&apos;t just another online gym — it's a movement. Our mission is to deliver transformative, accessible fitness experiences through expert-led online training.
-                        Whether you're just starting or leveling up, we&apos;re here to fuel your evolution.
+                        Olympus isn&apos;t just another online gym — it&apos;s a movement. Our mission is to deliver transformative, accessible fitness experiences through expert-led online training.
+                        Whether you&apos;re just starting or leveling up, we&apos;re here to fuel your evolution.
                     </p>
                     <p className="text-gray-500 text-sm md:text-base mb-10">
                         Backed by certified trainers, cutting-edge programming, and a community that motivates — Olympus is your fitness family online.
