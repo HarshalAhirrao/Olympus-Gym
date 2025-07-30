@@ -12,7 +12,7 @@ const Section3 = () => {
                     <h2 className="text-[#9c9a9b] text-base md:text-lg mb-3 tracking-wide transition-opacity duration-300">Get in Touch</h2>
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-6 transition-transform duration-300">Contact Us</h1>
                     <p className="text-[#aaa9ab] text-sm md:text-base leading-relaxed max-w-md mx-auto md:mx-0 mb-12 transition-opacity duration-300">
-                        Ready to take the first step towards your fitness goals? Reach out to our team, and we'll guide you through the process of joining our gym.
+                        Ready to take the first step towards your fitness goals? Reach out to our team, and we&apos;ll guide you through the process of joining our gym.
                     </p>
 
                     {/* Buttons */}
@@ -32,7 +32,7 @@ const Section3 = () => {
 
                 {/* Image Side */}
                 <div className="md:w-1/2 hidden md:flex justify-center ">
-                    <Image src="/img/section3.png" alt="Trainer assisting gym member" style={{height:"auto"}} width={550} height={350} className="rounded-lg shadow-lg object-cover" />
+                    <Image src="/img/section3.png" alt="Trainer assisting gym member" style={{ height: "auto" }} width={550} height={350} className="rounded-lg shadow-lg object-cover" />
                 </div>
             </div>
         </section>

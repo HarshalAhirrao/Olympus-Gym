@@ -41,7 +41,7 @@ export default function MembershipPage() {
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="text-gray-400 max-w-2xl mx-auto mb-14">
-                    Choose the plan that fits your goals — whether you're a beginner or looking to go pro, Olympus has you covered.
+                    Choose the plan that fits your goals — whether you&apos;re a beginner or looking to go pro, Olympus has you covered.
                 </motion.p>
 
                 <div className="grid gap-10 grid-cols-1 md:grid-cols-3">

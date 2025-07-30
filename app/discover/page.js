@@ -49,7 +49,13 @@ export default function DiscoverPage() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="bg-[#111] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                         <div className="relative aspect-[16/9] w-full mb-4 overflow-hidden rounded-lg">
-                            <Image src={item.img} alt={item.title} fill className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105" />
+                            <Image
+                                src={item.img}
+                                alt={item.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                            />
                         </div>
 
                         <h2 className="text-xl font-semibold mb-2">{item.title}</h2>

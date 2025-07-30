@@ -8,8 +8,8 @@ const Section4 = () => {
       <section id="Classes" className="w-full pb-4 pt-6 px-4 md:px-0 bg-white">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
               {/* Image */}
-              <div className="md:full hidden md:block pl-10">
-                  <Image src="/img/section4.png" alt="Gym Training" style={{ height: "auto" }} width={300} height={350} className="rounded" priority />
+              <div className="w-full hidden md:block pl-10">
+                  <Image src="/img/section4.png" alt="Gym Training" width={300} height={350} className="rounded h-auto w-auto" priority />
               </div>
 
               {/* Text */}

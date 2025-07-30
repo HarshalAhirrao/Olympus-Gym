@@ -50,7 +50,7 @@ const Section6 = () => {
 
                             {/* Icon */}
                             <div className="relative z-10 mb-4 w-16 h-16 rounded-full bg-[#2b2b2b] flex items-center justify-center shadow-inner">
-                                <Image src={item.img} alt={item.title} width={36} height={36} style={{ height: "auto" }} className="object-contain" />
+                                <Image src={item.img} alt={item.title} width={36} height={36} className="object-contain h-auto w-auto" />
                             </div>
 
                             {/* Title */}

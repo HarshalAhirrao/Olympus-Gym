@@ -30,14 +30,14 @@ export default function Toast({ show, onClose }) {
                         <strong>This site is a personal project to showcase my work.</strong>
                     </p>
                     <p>
-                        It's not a real gym — please <span className="text-red-400 font-medium">don't make actual payments</span>.
+                        It&apos;s not a real gym — please <span className="text-red-400 font-medium">don&apos;t make actual payments</span>.
                     </p>
                     <p>
                         If you did by mistake,{" "}
                         <Link href="/contact" className="underline text-blue-400 hover:text-blue-300 transition">
                             contact me
                         </Link>{" "}
-                        and I’ll help you.
+                        and I&apos;ll help you.
                     </p>
                 </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Section2 = () => {
   return (
@@ -19,7 +20,7 @@ const Section2 = () => {
                   </h1>
               </div>
               <div className="card flex justify-center flex-col rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg min-h-[300px] items-center w-[75vw] md:min-w-[250px] md:max-w-[300px] md:w-[24%] bg-[#efefef] cursor-pointer">
-                  <img src="/img/spartan.png" height={40} width={40} alt="Olympus Logo" className="invert mt-[20px] mb-[30px]" />
+                  <Image src="/img/spartan.png" height={40} width={40} alt="Olympus Logo" className="invert mt-[20px] mb-[30px]" />
                   <h1 className="text-black text-lg mb-[15px]">Memberships</h1>
                   <h1 className=" text-[#767378] text-center text-md font-[14px] px-4 mb-4 tracking-wide">
                       Invest in your well-being with our flexible membership options. Enjoy access to our state-of-the-art facilities
