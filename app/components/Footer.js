@@ -128,7 +128,7 @@ const Footer = () => {
                     <p>
                         Made with <span className="text-red-500">❤️</span> by{" "}
                         <a href="https://www.linkedin.com/in/harshal-ahirrao-996991317" rel="noopener noreferrer" target="blank" className="text-red-400 hover:underline">
-                            RedCandy
+                            Harshal_Ahirrao
                         </a>
                     </p>
                     <p className="text-[10px] sm:text-xs text-gray-500">Crafted with precision. Powered by passion.</p>
