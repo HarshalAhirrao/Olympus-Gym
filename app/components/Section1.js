@@ -8,13 +8,18 @@ export default function Section1() {
     const router = useRouter();
 
     return (
-        <section className="bg-black text-white w-full min-h-[50vh] pt-20 pb-12 md:min-h-screen flex items-center justify-center px-4 md:pt-16 transition-all duration-300">
+        <section className="bg-black text-white w-full min-h-[50vh] pt-24 pb-10 md:min-h-screen flex items-center justify-center px-4 md:pt-16 transition-all duration-300">
             <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-14 md:gap-20">
                 <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="md:w-1/2 text-center md:text-left">
                     {/* Text content */}
                     <div className="flex-1 md:pl-10 text-center md:text-left pt-4 md:pt-10">
                         <h2 className="text-blue-400 text-sm md:text-base uppercase tracking-widest mb-3 transition-opacity duration-300">Elevate Your Fitness Journey</h2>
                         <h1 className="text-3xl md:text-6xl font-extrabold leading-tight mb-6 transition-transform duration-300">Unlock Your Strength</h1>
+                        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="md:w-1/2">
+                            <div className="md:hidden mb-6">
+                                <Image src="/img/first.png" alt="Fitness Hero" width={300} height={300} style={{height:"auto"}} priority className="object-contain w-[80%] max-w-[300px] mx-auto" />
+                            </div>
+                        </motion.div>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl mx-auto md:mx-0 transition-opacity duration-300">
                             Welcome to our state-of-the-art gym, where we redefine the boundaries of physical excellence. Immerse yourself in a transformative experience that combines cutting-edge
                             training.
