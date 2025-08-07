@@ -17,7 +17,7 @@ export default function Home() {
             duration: 1.2, // Slower and smoother
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // More natural easing
             smooth: true,
-            smoothTouch: true, // You can set true for smoother touch
+            smoothTouch: false, // You can set true for smoother touch
             direction: "vertical",
             gestureDirection: "vertical",
         });
