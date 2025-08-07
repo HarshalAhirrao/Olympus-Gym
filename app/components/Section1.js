@@ -15,9 +15,9 @@ export default function Section1() {
                     <div className="flex-1 md:pl-10 text-center md:text-left pt-4 md:pt-10">
                         <h2 className="text-blue-400 text-sm md:text-base uppercase tracking-widest mb-3 transition-opacity duration-300">Elevate Your Fitness Journey</h2>
                         <h1 className="text-3xl md:text-6xl font-extrabold leading-tight mb-6 transition-transform duration-300">Unlock Your Strength</h1>
-                        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="md:w-1/2">
-                            <div className="md:hidden mb-6">
-                                <Image src="/img/first.png" alt="Fitness Hero" width={300} height={300} style={{height:"auto"}} priority className="object-contain w-[80%] max-w-[300px] mx-auto" />
+                        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="md:w-1/3">
+                            <div className="flex-1 md:hidden flex justify-center items-center ">
+                                <Image src="/img/first.png" alt="Fitness Hero" height={430} width={430} style={{ height: "auto" }} priority className="object-contain" />
                             </div>
                         </motion.div>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl mx-auto md:mx-0 transition-opacity duration-300">
