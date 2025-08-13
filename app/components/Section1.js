@@ -8,7 +8,7 @@ export default function Section1() {
     const router = useRouter();
 
     return (
-        <section className="bg-black text-white w-full min-h-[50vh] pt-24 pb-10 md:min-h-screen flex items-center justify-center px-4 md:pt-16 transition-all duration-300">
+        <section className="bg-black text-white w-full min-h-[50vh] pt-24 pb-10 flex items-center justify-center px-4 md:pt-16 transition-all duration-300">
             <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-14 md:gap-20">
                 <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="md:w-1/2 text-center md:text-left">
                     {/* Text content */}
@@ -28,7 +28,7 @@ export default function Section1() {
                         {/* CTA Buttons */}
                         <div className="flex flex-col gap-6 md:gap-10">
                             <button
-                                onClick={() => router.push("/join-now")}
+                                onClick={() => router.push("/membership")}
                                 className="bg-white text-[#605e5f] px-6 py-3 rounded-md font-semibold w-40 mx-auto md:mx-0 transition-all duration-200 hover:shadow-md hover:bg-gray-100">
                                 Join Now
                             </button>
