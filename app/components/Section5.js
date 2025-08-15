@@ -1,10 +1,9 @@
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Section5 = () => {
-    const router = useRouter(); 
+    const router = useRouter();
     return (
         <section id="Trainers" className="w-full bg-black text-white py-20 px-4">
             <div className="max-w-6xl mx-auto">
@@ -63,7 +62,7 @@ const Section5 = () => {
                             onClick={() => {
                                 router.push("/testimonials");
                             }}
-                            className="mt-8 bg-black text-[#bfbcb9] px-6 py-2 border border-[#656564] rounded hover:bg-neutral-900 transition-all duration-200 w-full sm:w-1/2">
+                            className="mt-8 bg-black cursor-pointer text-[#bfbcb9] px-6 py-2 border border-[#656564] rounded hover:bg-neutral-900 transition-all duration-200 w-full sm:w-1/2">
                             Read More
                         </button>
                     </div>

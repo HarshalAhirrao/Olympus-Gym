@@ -24,7 +24,7 @@ const Section3 = () => {
                         </Link>
                         <button
                             onClick={() => toast("🚧 This feature is coming soon!")}
-                            className="bg-transparent text-[#b8b7b9] border border-[#656564] font-medium px-6 py-2 rounded w-full sm:w-auto text-center hover:bg-neutral-900 hover:text-white transition-all duration-200">
+                            className="bg-transparent cursor-pointer text-[#b8b7b9] border border-[#656564] font-medium px-6 py-2 rounded w-full sm:w-auto text-center hover:bg-neutral-900 hover:text-white transition-all duration-200">
                             Schedule a Tour
                         </button>
                     </div>

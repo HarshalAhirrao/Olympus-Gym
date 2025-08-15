@@ -23,7 +23,7 @@ const Section4 = () => {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                       <button
                           onClick={() => toast("🚧 This feature is coming soon!")}
-                          className="bg-transparent text-[#b8b7b9] border border-[#656564] font-medium px-6 py-2 rounded w-full sm:w-auto text-center hover:bg-neutral-900 hover:text-white transition-all duration-200">
+                          className="bg-transparent cursor-pointer text-[#b8b7b9] border border-[#656564] font-medium px-6 py-2 rounded w-full sm:w-auto text-center hover:bg-neutral-900 hover:text-white transition-all duration-200">
                           View Schedule
                       </button>
 
