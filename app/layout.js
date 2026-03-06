@@ -1,10 +1,10 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import LenisProvider from "./components/LenisProvider";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",

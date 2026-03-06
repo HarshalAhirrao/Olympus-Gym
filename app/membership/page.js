@@ -2,6 +2,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const CheckIcon = () => (
+    <svg className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+);
+
 const plans = [
     {
         title: "Kickstart Coaching",
@@ -34,51 +40,84 @@ const plans = [
 
 export default function MembershipPage() {
     return (
-        <section className="bg-black text-white min-h-screen py-20 px-6">
-            <div className="max-w-7xl mx-auto text-center">
-                {/* Heading */}
-                <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-4xl md:text-6xl font-bold mb-4">
-                    Membership Plans
-                </motion.h1>
+        <section className="bg-black text-white min-h-screen py-20 px-6 relative overflow-hidden">
+            {/* Background glows */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-red-500/5 blur-[128px] pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-orange-500/5 blur-[100px] pointer-events-none" />
 
-                <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="text-gray-400 max-w-2xl mx-auto mb-14 text-sm md:text-base">
+            <div className="relative z-10 max-w-6xl mx-auto text-center">
+                {/* Heading */}
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                    <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400 mb-6">
+                        💎 Choose Your Plan
+                    </span>
+
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                        Membership{" "}
+                        <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Plans</span>
+                    </h1>
+                </motion.div>
+
+                <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-gray-500 max-w-2xl mx-auto mb-16 text-sm md:text-base leading-relaxed">
                     Every plan is custom-built for your body, lifestyle, and goals — so you get the exact coaching you need, when you need it.
                 </motion.p>
 
                 {/* Plans */}
-                <div className="grid gap-10 grid-cols-1 md:grid-cols-3">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-3">
                     {plans.map((plan, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.15 }}
+                            transition={{ duration: 0.5, delay: index * 0.15 }}
                             viewport={{ once: true }}
-                            className={`flex flex-col justify-between p-8 rounded-2xl border transition-all duration-300 hover:scale-[1.02] ${
-                                plan.highlight ? "bg-gradient-to-b from-yellow-500/10 to-[#1d1d1d] border-yellow-500 shadow-lg shadow-yellow-500/20" : "bg-[#1a1a1a] border-[#333]"
+                            whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                            className={`relative rounded-2xl p-[1px] ${
+                                plan.highlight
+                                    ? "bg-gradient-to-b from-red-500 via-red-500/40 to-transparent"
+                                    : "bg-gradient-to-b from-white/10 to-transparent"
                             }`}>
-                            {plan.highlight && <p className="text-yellow-400 text-xs font-semibold uppercase mb-3 tracking-wide">Most Popular</p>}
-
-                            <div>
-                                <h3 className="text-2xl font-bold mb-1">{plan.title}</h3>
-                                <p className="text-lg font-medium text-blue-400 mb-4">{plan.price}</p>
-                                <p className="text-sm text-gray-400 mb-6">{plan.description}</p>
-                                <ul className="space-y-2 text-left text-sm text-gray-300">
-                                    {plan.features.map((feature, i) => (
-                                        <li key={i} className="flex items-start gap-2">
-                                            <span className="text-green-400">✔</span> {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                            <Link
-                                href={plan.link}
-                                className={`mt-8 py-3 px-6 rounded-full text-sm font-semibold text-center transition-all duration-200 ${
-                                    plan.highlight ? "bg-yellow-500 text-black hover:bg-yellow-400" : "bg-blue-500 text-white hover:bg-blue-400"
+                            <div
+                                className={`relative rounded-2xl p-8 flex flex-col justify-between h-full text-left ${
+                                    plan.highlight
+                                        ? "bg-gradient-to-b from-red-500/10 via-[#141414] to-[#0a0a0a]"
+                                        : "bg-[#0f0f0f]"
                                 }`}>
-                                {plan.button}
-                            </Link>
+                                {/* Glow on highlight */}
+                                {plan.highlight && (
+                                    <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-60 h-40 bg-red-500/20 blur-[80px] rounded-full pointer-events-none" />
+                                )}
+
+                                <div className="relative z-10">
+                                    {plan.highlight && (
+                                        <span className="inline-block px-3 py-1 bg-red-500/20 border border-red-500/30 text-red-400 text-[11px] font-semibold uppercase tracking-wider rounded-full mb-4">
+                                            Most Popular
+                                        </span>
+                                    )}
+
+                                    <h3 className="text-xl font-bold mb-2">{plan.title}</h3>
+                                    <p className="text-sm font-medium text-red-400 mb-4">{plan.price}</p>
+                                    <p className="text-sm text-gray-500 mb-6 leading-relaxed">{plan.description}</p>
+
+                                    <ul className="space-y-3 mb-8">
+                                        {plan.features.map((feature, i) => (
+                                            <li key={i} className="flex items-start gap-2.5 text-sm text-gray-300">
+                                                <CheckIcon /> {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <Link
+                                    href={plan.link}
+                                    className={`relative z-10 w-full py-3 px-6 rounded-xl text-sm font-semibold text-center transition-all duration-300 block ${
+                                        plan.highlight
+                                            ? "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg shadow-red-500/20 hover:shadow-red-500/30"
+                                            : "bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20"
+                                    }`}>
+                                    {plan.button}
+                                </Link>
+                            </div>
                         </motion.div>
                     ))}
                 </div>
