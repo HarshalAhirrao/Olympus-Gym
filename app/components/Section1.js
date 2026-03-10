@@ -14,11 +14,7 @@ export default function Section1() {
 
             <div className="relative z-10 max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-16 py-20 md:py-0">
                 {/* Text content */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7 }}
-                    className="md:w-1/2 text-center md:text-left">
+                <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="md:w-1/2 text-center md:text-left">
                     {/* Badge */}
                     <motion.span
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400 mb-6 backdrop-blur-sm"
@@ -29,19 +25,12 @@ export default function Section1() {
                     </motion.span>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6">
-                        Unlock Your{" "}
-                        <span className="bg-gradient-to-r from-red-400 via-red-500 to-orange-400 bg-clip-text text-transparent">
-                            Strength
-                        </span>
+                        Unlock Your <span className="bg-gradient-to-r from-red-400 via-red-500 to-orange-400 bg-clip-text text-transparent">Strength</span>
                     </h1>
 
                     {/* Mobile hero image */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="md:hidden flex justify-center my-8">
-                        <Image src="/img/first.png" alt="Fitness Hero" height={350} width={350} style={{ height: "auto" }} priority className="object-contain" />
+                    <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }} className="md:hidden flex justify-center my-8">
+                        <Image src="/img/first.png" alt="Fitness Hero" height={350} width={350} style={{ height: "auto" }} priority className="object-contain relative z-10 w-auto h-auto" />
                     </motion.div>
 
                     <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
@@ -77,11 +66,7 @@ export default function Section1() {
                     </div>
 
                     {/* Stats row */}
-                    <motion.div
-                        className="flex gap-8 justify-center md:justify-start mt-12"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.6, duration: 0.5 }}>
+                    <motion.div className="flex gap-8 justify-center md:justify-start mt-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }}>
                         {[
                             { value: "500+", label: "Members" },
                             { value: "10+", label: "Programs" },

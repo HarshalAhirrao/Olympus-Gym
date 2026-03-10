@@ -90,11 +90,7 @@ export default function JoinNowPage() {
 
                 <div className="relative z-10 px-6 py-20">
                     {/* Hero Section */}
-                    <motion.div
-                        className="text-center max-w-4xl mx-auto mb-20"
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}>
+                    <motion.div className="text-center max-w-4xl mx-auto mb-20" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
                         {/* Badge */}
                         <motion.span
                             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6 backdrop-blur-sm"
@@ -105,10 +101,7 @@ export default function JoinNowPage() {
                         </motion.span>
 
                         <h1 className="text-4xl md:text-6xl font-bold mb-5 leading-tight">
-                            Transform Your Body{" "}
-                            <span className="bg-gradient-to-r from-red-400 via-red-500 to-orange-400 bg-clip-text text-transparent">
-                                From Anywhere
-                            </span>
+                            Transform Your Body <span className="bg-gradient-to-r from-red-400 via-red-500 to-orange-400 bg-clip-text text-transparent">From Anywhere</span>
                         </h1>
                         <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
                             Get fit with personalized coaching, flexible plans, and real accountability — all from the comfort of your home.
@@ -126,21 +119,15 @@ export default function JoinNowPage() {
                                 viewport={{ once: true }}
                                 whileHover={{ y: -6, transition: { duration: 0.25 } }}
                                 className={`group relative rounded-2xl p-[1px] ${
-                                    plan.highlight
-                                        ? "bg-gradient-to-b from-red-500 via-red-500/40 to-transparent"
-                                        : "bg-gradient-to-b from-white/10 to-transparent"
+                                    plan.highlight ? "bg-gradient-to-b from-red-500 via-red-500/40 to-transparent" : "bg-gradient-to-b from-white/10 to-transparent"
                                 }`}>
                                 {/* Inner card */}
                                 <div
                                     className={`relative rounded-2xl p-8 flex flex-col justify-between h-full ${
-                                        plan.highlight
-                                            ? "bg-gradient-to-b from-red-500/10 via-[#141414] to-[#0a0a0a]"
-                                            : "bg-[#0f0f0f]"
+                                        plan.highlight ? "bg-gradient-to-b from-red-500/10 via-[#141414] to-[#0a0a0a]" : "bg-[#0f0f0f]"
                                     }`}>
                                     {/* Highlight glow */}
-                                    {plan.highlight && (
-                                        <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-60 h-40 bg-red-500/20 blur-[80px] rounded-full pointer-events-none" />
-                                    )}
+                                    {plan.highlight && <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-60 h-40 bg-red-500/20 blur-[80px] rounded-full pointer-events-none" />}
 
                                     <div className="relative z-10">
                                         {plan.highlight && (
@@ -197,7 +184,7 @@ export default function JoinNowPage() {
                             <div className="bg-[#0f0f0f] rounded-2xl p-8 md:p-10">
                                 <div className="text-center mb-8">
                                     <h2 className="text-2xl md:text-3xl font-bold mb-2">Request a Callback</h2>
-                                    <p className="text-sm text-gray-500">Fill in your details and we'll get in touch shortly.</p>
+                                    <p className="text-sm text-gray-500">Fill in your details and we&apos;ll get in touch shortly.</p>
                                 </div>
 
                                 <form className="grid gap-4">
